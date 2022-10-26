@@ -1,13 +1,13 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import {
   TransactionHistoryTable,
   TableHead,
   TableTh,
   TableTr,
   TableTd,
-} from "./TransactionHistory.styled";
+} from './TransactionHistory.styled';
 
-const TransactionHistory = ({ items = [] }) => {
+const TransactionHistory = ({ items }) => {
   return (
     <TransactionHistoryTable>
       <TableHead>
@@ -38,7 +38,7 @@ TransactionHistory.propTypes = {
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
-    })
+    }).isRequired
   ),
 };
 
